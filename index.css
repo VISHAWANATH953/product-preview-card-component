@@ -1,0 +1,176 @@
+:root {
+  --DarkCyan: hsl(158, 26%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --VerydarkBlue: hsl(212, 21%, 14%);
+  --DarkGrayishBlue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 65;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 67.5%;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: var(--Cream);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+a {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 500;
+}
+
+main {
+  width: 90%;
+  background-color: var(--White);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    width: 80%;
+    height: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    width: 50%;
+    height: 60%;
+  }
+}
+
+main section.one {
+  height: 50%;
+}
+
+@media screen and (min-width: 600px) {
+  main section.one {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+main section.one img.hero {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section.two {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  main section.two {
+    width: 50%;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+main section.two h1.space_text {
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  color: var(--DarkGrayishBlue);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+main section.two h1.head {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--VerydarkBlue);
+  font-family: "Fraunces", serif;
+  margin: 1rem 0;
+}
+
+main section.two p {
+  color: var(--DarkGrayishBlue);
+  line-height: 2.2rem;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+main section.two section.price {
+  vertical-align: middle;
+  margin-bottom: 2rem;
+}
+
+main section.two section.price h1 {
+  color: var(--DarkCyan);
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+}
+
+main section.two button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 95%;
+  padding: 1.5rem 0;
+  margin: 1rem;
+  background-color: var(--DarkCyan);
+  text-decoration: none;
+  text-align: center;
+  color: var(--White);
+  border-radius: 1rem;
+  border-style: none;
+  outline: none;
+  font-weight: bold;
+}
+
+main section.two button img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+/*# sourceMappingURL=index.css.map */
